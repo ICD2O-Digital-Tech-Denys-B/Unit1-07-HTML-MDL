@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
+  <head lang="en-ca">
+    <meta charset="utf-8">
+    <meta name="description" content="my first website with style">
+   <meta name="keyword" content="Javascript">
+   <meta name="author" content="mouse">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+     <!-- MDL link-->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!--End of MDL link-->
+     <title>Awesome javascript website</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <!--The script here gives out an alert and makes the image appear once the button is clicked-->
+    <script>
+      function buttonClick() {
+      alert ("Mouse says hi")
+      document.getElementById('image')
+      .style.display = "block";
+      document.getElementById('btnID')
+      .style.display = "none";
+      }
+    </script>
+        <div>
+          <p>You got a message</p>
+              <!-- Number badge -->
+      <button class="mdl-badge" data-badge="1" onclick="buttonClick()">Inbox</button>
+      <!--Image-->
+          <img id="image" src="images/1200px-Мышь_2.png" alt="Mouse saying Hello" />
+        </div>
+        <!-- Paragraph linking to another webpage-->
+        <p><a href="https://humble-space-capybara-x5p7jw7pgwxphprxq-3000.app.github.dev/Unit1/Unit1-04/Unit1-04-HTML-CSS/">Link to another webpage</a></p>
   </body>
 </html>
